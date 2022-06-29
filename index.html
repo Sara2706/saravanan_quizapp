@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+
+    <!-- CSS link here -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont_container">
+            <!-- Home page starts here -->
+            <div class="home_page">
+                <!-- Home page header starts here -->
+                <section class="home_page_header">
+                    <img src="https://image3.mouthshut.com/images/imagesp/925915639s.png" alt="Logo error" class="logo">
+                    <h1 class="home_page_topic">Hello User!</h1>
+                    <h6 class="home_page_info">Enter your name to continue the Quiz.</h6>
+                    <div class="user_details">
+                        <input type="text" placeholder="ENTER YOUR NAME..." id="user_name_input">
+                        <button id="user_name_btn">Enter</button>
+                    </div>
+                </section>
+                <!-- Home page header ends here -->
+                <!-- Home page footer starts here -->
+                <section class="home_page_footer">
+                    <h1>Select category!</h1>
+                    <div class="catogry">
+                        <button id="prod1">Pipes and Cisterns</button>
+                        <button id="prod2">Probability</button>
+                        <button id="prod3">Problems on age</button>
+                        <button id="prod4">Profit and loss</button>
+                    </div>
+                </section>
+                <!-- Home page footer ends here -->
+            </div>
+            <!-- Home page ends here -->
+            <!-- Rules page starts here -->
+            <div class="rules_page">
+                <h2>Rules and regulation</h2>
+                
+                <ol>
+                    <li>In this Quiz app have total 10 Quetions</li>
+                    <li>Each quetion have 4 options & you should click your  choice</li>
+                    <li>Each Quetion have 10 seconds to answer.</li>
+                    <li>Reslut will show on the last page</li>
+                </ol>
+                <div class="rules_buttons">
+                    <button id="rules_back">Go back</button>
+                    <button id="rules_next">Start</button>
+                </div>
+            </div>
+            <!-- Rules page ends here -->
+            <!-- Quiz page starts here -->
+            <div class="quiz_page">
+                <div class="quiz_header">
+                    <div class="quix_header_topic">
+                        <h6 class="topic">Topic</h6>
+                    </div>
+                    <div class="time_and_scorecard">
+                        <p class="timer" id="timer">00</p>
+                        <p class="scoreboard">score:<span class="score">0</span></p>
+                    </div>
+                </div>
+                <div class="quiz_content">
+                    <div class="pagination">
+                        <p><span id="question_num">1</span>/<span id="total_question">10</span></p>
+                    </div>
+                    <div class="quiz_question">
+                        <h3 id="question">Question</h3>
+                    </div>
+                    <div class="quiz_options" >
+                        <div class="option">
+                            <span>Option</span>
+                        </div>
+                        <div class="option">
+                            <span>Option</span>
+                        </div>
+                        <div class="option">
+                            <span>Option</span>
+                        </div>
+                        <div class="option">
+                            <span>Option</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz_footer">
+                    <button id="next_Question">Next</button>
+                    <button id="goToResult" class="goToResults">Result</button>
+                </div>
+            </div> 
+            <!-- Quiz page ends here -->
+            <!-- Result page starts here -->
+            <div class="result_page">
+                <h1>Quiz Result</h1>
+                <p><span id="playerName">aaa</span> your result is</p>
+                <p>Total time taken <span id="timeTaken">120</span> seconds</p>
+                <p>Total question: <span id="tQ">10</span></p>
+                <p>Attempt: <span id="attempt">08</span></p>
+                <p>Correct: <span id="correct">03</span></p>
+                <p>Incorrect: <span id="inCorrect">07</span></p>
+                <p>Percentage: <span id="percentage">30.00%</span></p>
+                <div class="result_buttons">
+                    <button id="startAgain">Start again</button>
+                    <button id="home">Go to home</button>
+                </div>
+            </div>
+            <!-- Result page ends here -->
+        </div>
+    </div>
+
+    <!-- Javascript link here -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
